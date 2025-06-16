@@ -1,0 +1,25 @@
+{
+  "name": "in-line-citations-kb",
+  "version": "1.0.0",
+  "description": "A web application for demonstrating in-line citations functionality",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p build && cp -r citation-chat/* build/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmiyagi13/in-line-citations-KB.git"
+  },
+  "keywords": [
+    "citations",
+    "chat",
+    "knowledge-base"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rmiyagi13/in-line-citations-KB/issues"
+  },
+  "homepage": "https://github.com/rmiyagi13/in-line-citations-KB#readme"
+} 
