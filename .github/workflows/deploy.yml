@@ -1,4 +1,4 @@
-name: Build and Deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -25,16 +25,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-      
-      - name: Install dependencies
-        run: |
-          npm install -g npm@latest
-          npm install
       
       - name: Build
         run: |
@@ -79,8 +69,11 @@ jobs:
           </html>
           EOF
       
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3.0.1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: './build'
 
