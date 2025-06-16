@@ -31,7 +31,7 @@ jobs:
           # Create a build directory
           mkdir -p build
           
-          # Copy static files
+          # Copy all files from citation-chat directory
           cp -r citation-chat/* build/
           
           # Create a root index.html that redirects to the citation-chat
@@ -68,6 +68,10 @@ jobs:
           </body>
           </html>
           EOF
+          
+          # List the contents of the build directory to verify
+          echo "Contents of build directory:"
+          ls -R build/
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
