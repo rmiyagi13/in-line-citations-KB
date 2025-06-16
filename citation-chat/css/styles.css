@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  display: flex;
+  gap: 20px;
+  height: calc(100vh - 150px);
+}
+
+.chat-container {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.user-message {
+  background-color: #e3f2fd;
+  margin-left: auto;
+}
+
+.ai-message {
+  background-color: #f1f1f1;
+  margin-right: auto;
+}
+
+.input-container {
+  padding: 15px;
+  border-top: 1px solid #eee;
+  display: flex;
+  gap: 10px;
+}
+
+#user-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none;
+  height: 60px;
+  font-family: inherit;
+}
+
+#send-button {
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#send-button:hover {
+  background-color: #0b7dda;
+}
+
+.citation-panel {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.citation-header {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.citation-content {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.cited-text {
+  background-color: #fff8e1;
+  padding: 0 3px;
+  border-bottom: 2px dotted #ffc107;
+  cursor: pointer;
+}
+
+.citation-item {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.citation-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.citation-source {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.citation-content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.citation-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.citation-button {
+  padding: 5px 10px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.citation-button:hover {
+  background-color: #e0e0e0;
+}
+
+.resource-card {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.resource-image {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.resource-details {
+  flex: 1;
+}
+
+.resource-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.resource-description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Tippy tooltip custom styles */
+.tippy-box {
+  background-color: white;
+  color: #333;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.tippy-content {
+  padding: 10px;
+}
+
+.tooltip-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tooltip-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.tooltip-button {
+  padding: 5px 10px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+.tooltip-button:hover {
+  background-color: #e0e0e0;
+} 
