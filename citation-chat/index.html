@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citation Chat</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Citation Chat</h1>
+    </header>
+    
+    <main>
+      <div class="chat-container">
+        <div id="chat-messages" class="chat-messages">
+          <!-- Messages will be added here dynamically -->
+        </div>
+        
+        <div class="input-container">
+          <textarea id="user-input" placeholder="Type your message here..."></textarea>
+          <button id="send-button">Send</button>
+        </div>
+      </div>
+      
+      <div id="citation-panel" class="citation-panel">
+        <div class="citation-header">
+          <h2>Citations</h2>
+          <button id="close-citations">×</button>
+        </div>
+        <div id="citation-content" class="citation-content">
+          <!-- Citations will be added here dynamically -->
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy-bundle.umd.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html> 
